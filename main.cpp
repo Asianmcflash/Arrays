@@ -69,27 +69,24 @@ int main()
     //Note your input data from the above
 
     cout << "Enter all temperature for a week of first city and then second city. \n";
-
  
 
     // Inserting the values into the temperature array
 
     //note for every dimension of the array you need a for loop 2 dimensions = 2 for loops
 
-    for (int i = 0; i < CITY; ++i)
-
+    for (int i = 0; i < CITY - 1; ++i)
     {
-
         for(int j = 0; j < WEEK; ++j)
-
         {
-
-            cout << "City " << i + 1 << ", Day " << j + 1 << " : ";
-
-            cin >> temperature[i][j];
-
+          cout << "Kent" << ", Day " << j + 1 << " : ";
+          cin >> temperature[i][j];
         }
-
+        for(int j = 0; j < WEEK; ++j)
+        {
+          cout << "Orange " << ", Day " << j + 1 << " : ";
+          cin >> temperature[i + 1][j];
+        }
     }
 
  
@@ -100,18 +97,16 @@ int main()
 
     // Accessing the values from the temperature array
 
-    for (int i = 0; i < CITY; ++i)
-
+    for (int i = 0; i < CITY - 1; ++i)
     {
-
         for(int j = 0; j < WEEK; ++j)
-
         {
-
-            cout << "City " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
-
+           cout << "Kent " << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
         }
-
+        for(int j = 0; j < WEEK; ++j)
+        {
+           cout << "Orange " << ", Day " << j + 1 << " = " << temperature[i + 1][j] << endl;
+        }
     }
 
    /*For up to 5 Points Extra Credit
