@@ -69,6 +69,7 @@ int main()
     //Note your input data from the above
 
     cout << "Enter all temperature for a week of first city and then second city. \n";
+    cout << "Temp for Kent: 67, 74, 78, 80, 80, 77, 67" << endl << "Temp for Orange: 64, 69, 72, 78, 87, 85, 75" << endl;
  
 
     // Inserting the values into the temperature array
